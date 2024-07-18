@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(to bottom, black, darkgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  background: darkgray;
+  display: grid;
+  width: 500px;
+  margin: auto;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 200px 100px 400px;
+  grid-gap: 0px;
+  grid-template-areas:
+    "rst rst"
+    "sp op"
+    "nmb op";
+  justify-content: space-between;
+  border: 5px solid grey;
+  border-radius: 10px;
+}
+.digits {
+  grid-area: nmb;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 10px;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box {
+  background: rgb(255, 255, 255);
+  width: 120px;
+  height: 90px;
+  border: 10px black;
+  box-shadow: 0 0 4px black;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+.box:hover {
+  box-shadow: 0 0 8px black;
+  transition: all 300ms ease;
+}
+.operators {
+  grid-area: op;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ops {
+  background: rgb(55, 0, 255);
+  font-size: 30px;
+  font-weight: bold;
+  width: 90px;
+  height: 85px;
+  border: 10px black;
+  box-shadow: 0 0 4px black;
+  cursor: pointer;
+}
+.ops:hover {
+  box-shadow: 0 0 8px black;
+  transition: all 300ms ease;
+}
+
+.input {
+  grid-area: rst;
+  border: solid white;
+  width: 490px;
+  height: 200px;
+  font-size: 100px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: end;
+}
+.special {
+  grid-area: sp;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sp {
+  background: rgb(255, 0, 0);
+  font-size: larger;
+  font-weight: bold;
+  width: 120px;
+  height: 70px;
+  border: 10px black;
+  box-shadow: 0 0 4px black;
+  cursor: pointer;
+}
+.sp:hover {
+  box-shadow: 0 0 8px black;
+  transition: all 300ms ease;
+}
+
+button:active {
+  font-size: medium;
+  color: aliceblue;
+  transition: ease-out 100ms;
+}

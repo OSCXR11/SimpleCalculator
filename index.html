@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="digits">
+            <button type="button" class="box">7</button>
+            <button type="button" class="box">9</button>
+            <button type="button" class="box">8</button>
+            <button type="button" class="box">4</button>
+            <button type="button" class="box">5</button>
+            <button type="button" class="box">6</button>
+            <button type="button" class="box">1</button>
+            <button type="button" class="box">2</button>
+            <button type="button" class="box">3</button>
+            <button type="button" class="box">.</button>
+            <button type="button" class="box">0</button>
+            <button type="button" class="box" id="theme">theme</button>
+
+        </div>
+        <div class="operators">
+            <button type="button" class="ops">+</button>
+            <button type="button" class="ops">-</button>
+            <button type="button" class="ops">*</button>
+            <button type="button" class="ops">/</button>
+            <button type="button" id="equal" class="ops">=</button>
+        </div>
+        <div class="special">
+            <button type="button" id="CE" class="sp">CE</button>
+            <button type="button" id="DEL" class="sp">DEL</button>
+            <button type="button" id="sign" class="sp">+/-</button>
+        </div>
+        <div class="final">
+            <input disabled type="text" class="input" id="result" placeholder="0">
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
